@@ -1,0 +1,81 @@
+/*
+Theme Name: Voervadsbro.dk Theme
+Theme URI: www.yanchware.com
+Author: Angelo Agatino Nicolosi
+Author URI: https://www.yanchware.com
+Description: Theme for Voervadsbro.dk.
+Version: 1.0
+License: MIT
+License URI: http://opensource.org/licenses/MIT
+Text Domain: voervadsbro.dk
+Domain Path: /languages/
+Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-menu, featured-images, front-page-post-form, post-formats, threaded-comments, translation-ready
+*/
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+ .wrapper {
+     position: relative;
+     overflow: hidden;
+     width: 50vw;
+     height: 50vh;
+ }
+
+ .slide {
+     position: absolute;
+     left: -50vw;
+     width: 50vw;
+     height: 50vh;
+     -webkit-animation: slide 0.5s forwards;
+     -webkit-animation-delay: 0.2s;
+     animation: slide 0.5s forwards;
+     animation-delay: 2s;
+ }
+
+ @-webkit-keyframes slide {
+     100% { left: 0; }
+ }
+
+ @keyframes slide {
+     100% { left: 0; }
+ }
+
+ .flyAnimation {
+     animation: fly 3.59330395s forwards;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(0.445, .05, .55, .95);
+     -webkit-animation: fly 3.59330395s forwards;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: cubic-bezier(0.445, .05, .55, .95)
+ }
+ @-webkit-keyframes fly {
+     0% {
+         -webkit-transform: translate(0, 0)
+     }
+     50% {
+         -webkit-transform: translate(0, 25px)
+     }
+     100% {
+         -webkit-transform: translate(0, 0)
+     }
+ }
+ @keyframes fly {
+     0% {
+         -webkit-transform: translate(0, 0);
+         transform: translate(0, 0)
+     }
+     50% {
+         -webkit-transform: translate(0, 25px);
+         transform: translate(0, 25px)
+     }
+     100% {
+         -webkit-transform: translate(0, 0);
+         transform: translate(0, 0)
+     }
+ }
