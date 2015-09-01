@@ -67,7 +67,14 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
   if ( ! function_exists( 'voervadsbro_scripts' ) ) :
     function voervadsbro_scripts() {
       wp_enqueue_style( 'voervadsbro-style', get_template_directory_uri() . '/style.css?v=' . time(), array(), null );
-      wp_enqueue_script( 'voervadsbro-script', get_template_directory_uri() . '/js/voervadsbro.js?v=' . time(), array( 'jquery' ), '20150330', true );
+      wp_enqueue_style( 'mainbg-style', get_template_directory_uri() . '/css/mainbg.css', array(), null );
+      wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation/foundation.css', array(), null );
+      wp_enqueue_style( 'foundation-icons-style', get_template_directory_uri() . '/fonts/foundation/foundation-icons.css', array(), null );
+
+      wp_enqueue_script( 'classie-script', get_template_directory_uri() . '/js/classie.js', array(), '1.0.1', true );
+      wp_enqueue_script( 'modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
+      wp_enqueue_script( 'foundation-script', get_template_directory_uri() . '/js/foundation.min.js', array('jquery', 'modernizr-script'), '5', true );
+      wp_enqueue_script( 'voervadsbro-script', get_template_directory_uri() . '/js/voervadsbro.js?v=' . time(), array( 'classie-script', 'foundation-script' ), '20150330', true );
     }
     add_action( 'wp_enqueue_scripts', 'voervadsbro_scripts' );
   endif;
