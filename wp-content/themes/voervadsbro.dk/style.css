@@ -15,38 +15,38 @@ Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 
 /**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
+* 1. Set default font family to sans-serif.
+* 2. Prevent iOS text size adjust after orientation change, without disabling
+*    user zoom.
+*/
 
- body{
-   font-family: 'Gloria Hallelujah', cursive !important;
-   color: #000;
- }
+body{
+  font-family: 'Gloria Hallelujah', cursive !important;
+  color: #000;
+}
 
- h1, h2, h3, h4, h5, h6{
-   font-family: 'Bangers', cursive !important;
- }
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Bangers', cursive !important;
+}
 
 
- .wrapper {
-     position: relative;
-     overflow: hidden;
-     width: 50vw;
-     height: 50vh;
- }
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 50vw;
+  height: 50vh;
+}
 
- .slide {
-     position: absolute;
-     left: -50vw;
-     width: 50vw;
-     height: 50vh;
-     -webkit-animation: slide 0.5s forwards;
-     -webkit-animation-delay: 0.2s;
-     animation: slide 0.5s forwards;
-     animation-delay: 2s;
- }
+.slide {
+  position: absolute;
+  left: -50vw;
+  width: 50vw;
+  height: 50vh;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 2s;
+}
 
 footer{
   background-color: #fff;
@@ -80,51 +80,66 @@ section.divider .pricing-table{
   transform: scale(1);
   border: 0;
   transition: 0.4s ease;
-  z-index: 13; }
-  .active-tb:hover {
-    position: relative;
-    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
-    -ms-transform: scale(1.2,1.2); /* IE 9 */
-    -webkit-transform: scale(1.2,1.2); /* Safari */
-    transform: scale(1.2,1.2);
-    z-index: 15; }
+  z-index: 13;
+}
+.active-tb:hover {
+  position: relative;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  -ms-transform: scale(1.2,1.2); /* IE 9 */
+  -webkit-transform: scale(1.2,1.2); /* Safari */
+  transform: scale(1.2,1.2);
+  z-index: 15;
+}
 
 
 .event {
   padding: 1rem 1rem 1rem 0;
-  display: table; }
+  display: table;
+}
 
 .event-date {
   width: 6rem;
   margin: 0 auto 1rem;
   display: table-cell;
-  width: auto; }
-  .event-date .event-month {
-    margin: 0;
-    background: #388a5a;
-    padding: 0.5rem 2rem;
-    text-align: center; }
-  .event-date .event-day {
-    margin: 0;
-    border: 1px solid #388a5a;
-    padding: 0 2rem;
-    text-align: center;
-    font-size: 2rem; }
+  width: auto;
+}
+.event-date .event-month {
+  margin: 0;
+  background: #388a5a;
+  padding: 0.5rem 2rem;
+  text-align: center;
+}
+.event-date .event-day {
+  margin: 0;
+  border: 1px solid #388a5a;
+  padding: 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
 
 .event-desc {
   padding: 0 0 0 1rem;
   text-align: left;
   display: table-cell;
-  vertical-align: top; }
-  .event-desc .event-desc-header {
-    margin: 0 0 0.5rem 0;
-    padding: 0; }
-  .event-desc .event-desc-detail {
-    margin: 0 0 0.25rem;
-    padding: 0; }
-  .event-desc .event-desc-time {
-    font-weight: bold; }
-  .event-desc .rsvp.button {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    margin: 0; }
+  vertical-align: top;
+}
+.event-desc .event-desc-header {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+}
+.event-desc .event-desc-detail {
+  margin: 0 0 0.25rem;
+  padding: 0;
+}
+.event-desc .event-desc-time {
+  font-weight: bold;
+}
+.event-desc .rsvp.button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
+}
+
+.event .event-day{
+  background-color: #fff;
+}

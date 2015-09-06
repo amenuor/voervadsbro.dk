@@ -12,11 +12,11 @@
 	<div class="<?php echo esc_attr( Tagregator::CSS_PREFIX ); ?>item-content">
 		<?php if ( $show_excerpt ) : ?>
 			<?php the_excerpt(); ?>
-			<p><a href="<?php echo esc_attr( $post_permalink ); ?>">Read the rest of this tweet on Twitter</a></p>
+			<p><a href="<?php echo esc_attr( $post_permalink ); ?>" target="_blank">Read the rest of this tweet on Twitter</a></p>
 		<?php else : ?>
 			<?php the_content(); ?>
 		<?php endif; ?>
-		
+
 		<?php if ( $media ) : ?>
 			<?php foreach ( $media as $media_item ) : ?>
 				<?php if ( 'image' == $media_item['type'] ) : ?>
@@ -32,8 +32,8 @@
 		<li><a href="https://twitter.com/intent/favorite?tweet_id=<?php echo esc_attr( $tweet_id ); ?>"><i class="icon-star"></i> <span>Favorite</span></a></li>
 	</ul>
 
-	<a href="<?php echo esc_attr( $post_permalink ); ?>" class="<?php echo esc_attr( Tagregator::CSS_PREFIX ); ?>timestamp">
-		<?php echo human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) . ' ago'; ?>
+	<a href="<?php echo esc_attr( $post_permalink ); ?>" class="<?php echo esc_attr( Tagregator::CSS_PREFIX ); ?>timestamp" target="_blank">
+		<?php echo human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) . ' siden'; ?>
 	</a>
 
 	<img class="tggr-source-logo" src="<?php echo esc_attr( $logo_url ); ?>" alt="Twitter" />
