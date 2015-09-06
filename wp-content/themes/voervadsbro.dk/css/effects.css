@@ -25,6 +25,7 @@ section.divider {
 
 section.divider h2 {
 	color: #fff;
+	margin-top: 0;
 }
 
 .text:first-child {
@@ -108,6 +109,11 @@ section.divider::after {
 }
 
 /* Clouds */
+
+#clouds{
+	background: #2b7247;
+}
+
 #clouds path {
 	fill: #fff;
 	stroke: #fff;
@@ -122,6 +128,29 @@ section.divider::after {
 #bigHalfCircle path {
 	fill: #388a5a;
 	stroke: #388a5a;
+}
+
+/* Folded corner */
+
+#slit{
+	background: #2b7247;
+}
+
+#slitPath1 {
+	fill: #388a5a;
+	stroke: red;
+	stroke-width: 0;
+}
+
+#slitPath2, #slitPath3 {
+	fill: #256940;
+}
+
+.ss-style-foldedcorner::before,
+.ss-style-foldedcorner::after {
+	bottom: 0;
+	width: 100px;
+	height: 100px;
 }
 
 @-webkit-keyframes slide {
