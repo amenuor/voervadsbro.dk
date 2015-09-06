@@ -179,9 +179,13 @@ get_header(); ?>
 	</svg>
 	<section class="divider ss-style-foldedcorner">
 		<h2>Om #Voervadsbro</h2>
-		<?php
-			echo do_shortcode('[tagregator hashtag="#Voervadsbro"]');
-		?>
+    <div class="row">
+      <div class="large-12 columns">
+    		<?php
+    			echo do_shortcode('[tagregator hashtag="#Voervadsbro"]');
+    		?>
+      </div>
+    </div>
 
 	</section>
 <?php get_footer(); ?>

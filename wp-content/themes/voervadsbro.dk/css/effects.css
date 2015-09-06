@@ -23,6 +23,10 @@ section.divider {
 	text-align: center;
 }
 
+section.divider p{
+	color: #000;
+}
+
 section.divider h2 {
 	color: #fff;
 	margin-top: 0;
