@@ -1,0 +1,167 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.container {
+	overflow: hidden;
+  background-color: #388a5a;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+.container svg {
+	display: block;
+}
+
+section.divider {
+	position: relative;
+	background: #2b7247;
+	color: #fff;
+	text-align: center;
+}
+
+section.divider h2 {
+	color: #fff;
+}
+
+.text:first-child {
+	text-align: right;
+}
+
+.text:nth-child(2) {
+	text-align: left;
+}
+
+.icon {
+	display: block;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+  background: transparent;
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+  margin: 0 auto;
+  padding-top: 10px;
+  opacity: .6;
+  -webkit-transition: all 0.5s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+  -moz-transition: all 0.5s ease-out;  /* Firefox 4-15 */
+  -o-transition: all 0.5s ease-out;  /* Opera 10.50–12.00 */
+  transition: all 0.5s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+article:hover .inner{
+  opacity: 1;
+}
+
+section.divider.color h2 {
+	color: #fff;
+}
+
+section.divider.color{
+  background-color: #388a5a;
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+section.divider::before,
+section.divider::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+/* Double Diagonal line */
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	background: #2072a7;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	-webkit-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #1C492E;
+	-webkit-transform: rotate(-3deg);
+	transform: rotate(-3deg);
+	-webkit-transform-origin: 3% 0;
+	transform-origin: 3% 0;
+}
+
+/* Clouds */
+#clouds path {
+	fill: #fff;
+	stroke: #fff;
+  position: relative;
+}
+
+/* Big half circle */
+#bigHalfCircle{
+  background: #2b7247;
+}
+
+#bigHalfCircle path {
+	fill: #388a5a;
+	stroke: #388a5a;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+.flyAnimation {
+    animation: fly 3.59330395s forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.445, .05, .55, .95);
+    -webkit-animation: fly 3.59330395s forwards;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.445, .05, .55, .95)
+}
+@-webkit-keyframes fly {
+    0% {
+        -webkit-transform: translate(0, 0)
+    }
+    50% {
+        -webkit-transform: translate(0, 25px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0)
+    }
+}
+@keyframes fly {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    50% {
+        -webkit-transform: translate(0, 25px);
+        transform: translate(0, 25px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}

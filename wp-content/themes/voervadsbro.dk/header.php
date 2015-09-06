@@ -20,3 +20,4 @@
 </head>
 
 <body <?php body_class(); ?>>
+	<div id="container" class="container intro-effect-fadeout">

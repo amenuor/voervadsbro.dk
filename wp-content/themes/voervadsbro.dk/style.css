@@ -20,6 +20,15 @@ Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, 
  *    user zoom.
  */
 
+ body{
+   font-family: 'Gloria Hallelujah', cursive !important;
+ }
+
+ h1, h2, h3, h4, h5, h6{
+   font-family: 'Bangers', cursive !important;
+ }
+
+
  .wrapper {
      position: relative;
      overflow: hidden;
@@ -38,44 +47,83 @@ Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, 
      animation-delay: 2s;
  }
 
- @-webkit-keyframes slide {
-     100% { left: 0; }
- }
+footer{
+  background-color: #fff;
+  height: 100%;
+}
 
- @keyframes slide {
-     100% { left: 0; }
- }
+section.divider .columns{
+  margin-bottom: 30px;
+}
 
- .flyAnimation {
-     animation: fly 3.59330395s forwards;
-     animation-iteration-count: infinite;
-     animation-timing-function: cubic-bezier(0.445, .05, .55, .95);
-     -webkit-animation: fly 3.59330395s forwards;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: cubic-bezier(0.445, .05, .55, .95)
- }
- @-webkit-keyframes fly {
-     0% {
-         -webkit-transform: translate(0, 0)
-     }
-     50% {
-         -webkit-transform: translate(0, 25px)
-     }
-     100% {
-         -webkit-transform: translate(0, 0)
-     }
- }
- @keyframes fly {
-     0% {
-         -webkit-transform: translate(0, 0);
-         transform: translate(0, 0)
-     }
-     50% {
-         -webkit-transform: translate(0, 25px);
-         transform: translate(0, 25px)
-     }
-     100% {
-         -webkit-transform: translate(0, 0);
-         transform: translate(0, 0)
-     }
- }
+section.divider .title{
+  -webkit-transform: none;
+  transform: none;
+  position: static;
+  background-color: #2b7247;
+  font-family: 'Bangers', cursive !important;
+  color: #fff;
+}
+
+h4.event-desc-header{
+  color: #fff;
+}
+
+section.divider .pricing-table{
+  border-color: #2b7247;
+}
+
+.active-tb {
+  position: relative;
+  box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+  transform: scale(1);
+  border: 0;
+  transition: 0.4s ease;
+  z-index: 13; }
+  .active-tb:hover {
+    position: relative;
+    box-shadow: 0px 2px 10px 0px rgba(50, 50, 50, 0.5);
+    -ms-transform: scale(1.2,1.2); /* IE 9 */
+    -webkit-transform: scale(1.2,1.2); /* Safari */
+    transform: scale(1.2,1.2);
+    z-index: 15; }
+
+
+.event {
+  padding: 1rem 1rem 1rem 0;
+  display: table; }
+
+.event-date {
+  width: 6rem;
+  margin: 0 auto 1rem;
+  display: table-cell;
+  width: auto; }
+  .event-date .event-month {
+    margin: 0;
+    background: #388a5a;
+    padding: 0.5rem 2rem;
+    text-align: center; }
+  .event-date .event-day {
+    margin: 0;
+    border: 1px solid #388a5a;
+    padding: 0 2rem;
+    text-align: center;
+    font-size: 2rem; }
+
+.event-desc {
+  padding: 0 0 0 1rem;
+  text-align: left;
+  display: table-cell;
+  vertical-align: top; }
+  .event-desc .event-desc-header {
+    margin: 0 0 0.5rem 0;
+    padding: 0; }
+  .event-desc .event-desc-detail {
+    margin: 0 0 0.25rem;
+    padding: 0; }
+  .event-desc .event-desc-time {
+    font-weight: bold; }
+  .event-desc .rsvp.button {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin: 0; }
