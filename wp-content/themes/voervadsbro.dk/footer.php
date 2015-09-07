@@ -33,9 +33,7 @@
 		</path>
 	</svg>
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<p>If you enjoyed these styles you might also like:</p>
-		<p><a href="http://tympanus.net/Development/CreativeLinkEffects/">Creative Link Effects</a></p>
-		<p><a href="http://tympanus.net/Tutorials/CaptionHoverEffects/">Caption Hover Effects</a></p>
+		This is the end
 	</footer><!-- .site-footer -->
 
 	</div><!-- /container -->

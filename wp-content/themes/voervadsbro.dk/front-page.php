@@ -28,7 +28,7 @@ get_header(); ?>
 		<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 			<ul class="title-area">
 				<li class="name">
-					<h1><a href="#">My Site</a></h1>
+					<h1><a href="#">Voervadsbro.dk</a></h1>
 				</li>
 				<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -136,6 +136,12 @@ get_header(); ?>
 			</div>
 		</div>
 
+    <div class="row">
+      <div class="small-12 columns">
+        <a class="button text-transform" href="#">Se hvad der ellers sker i Voervadsbro...</a>
+      </div>
+    </div>
+
 
 	</section>
 
@@ -171,13 +177,20 @@ get_header(); ?>
 		   </div>
 		</div>
 
+    <div class="row">
+      <div class="small-12 columns">
+        <a class="button text-transform" href="#">Se flere nyheder ...</a>
+      </div>
+    </div>
+
+
 	</section>
 	<svg id="slit" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
 		<path id="slitPath2" d="M50 100 C49 80 47 0 40 0 L47 0 Z" />
 		<path id="slitPath3" d="M50 100 C51 80 53 0 60 0 L53 0 Z" />
 		<path id="slitPath1" d="M47 0 L50 100 L53 0 Z" />
 	</svg>
-	<section class="divider ss-style-foldedcorner">
+	<section id="socialCollage" class="divider ss-style-foldedcorner">
 		<h2>Om #Voervadsbro</h2>
     <div class="row">
       <div class="large-12 columns">

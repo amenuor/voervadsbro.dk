@@ -71,8 +71,9 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
       wp_enqueue_style( 'effects-style', get_template_directory_uri() . '/css/effects.css', array(), null );
       wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation/foundation.css', array(), null );
       wp_enqueue_style( 'foundation-icons-style', get_template_directory_uri() . '/fonts/foundation/foundation-icons.css', array(), null );
-      wp_enqueue_style( 'gloria-font-style', 'https://fonts.googleapis.com/css?family=Gloria+Hallelujah', array(), null );
-      wp_enqueue_style( 'brangers-font-style', 'https://fonts.googleapis.com/css?family=Bangers', array(), null );
+      wp_enqueue_style( 'social-font-style', 'https://fonts.googleapis.com/css?family=Gloria+Hallelujah', array(), null );
+      wp_enqueue_style( 'headerText-font-style', 'https://fonts.googleapis.com/css?family=Righteous', array(), null );
+      wp_enqueue_style( 'bodyText-font-style','https://fonts.googleapis.com/css?family=Comfortaa', array(), null );
 
       wp_enqueue_script( 'classie-script', get_template_directory_uri() . '/js/classie.js', array(), '1.0.1', true );
       wp_enqueue_script( 'modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );

@@ -21,12 +21,17 @@ Tags: white, gray, light, one-column, two-columns, three-columns, left-sidebar, 
 */
 
 body{
+  font-family: 'Comfortaa', cursive !important;
+  color: #000;
+}
+
+#socialCollage{
   font-family: 'Gloria Hallelujah', cursive !important;
   color: #000;
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Bangers', cursive !important;
+h1, h2, h3, h4, h5, h6, button, .button, section.divider .title{
+  font-family: 'Righteous', cursive !important;
 }
 
 
@@ -62,7 +67,6 @@ section.divider .title{
   transform: none;
   position: static;
   background-color: #2b7247;
-  font-family: 'Bangers', cursive !important;
   color: #fff;
 }
 
