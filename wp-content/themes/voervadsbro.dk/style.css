@@ -147,3 +147,25 @@ section.divider .pricing-table{
 .event .event-day{
   background-color: #fff;
 }
+
+.pageheader{
+  height: 80vh;
+  position: relative;
+}
+
+.pageheader .pageheadercontent{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.wrap{
+  background: #fff;
+  margin: 20px auto;
+  display: block;
+  padding:20px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}

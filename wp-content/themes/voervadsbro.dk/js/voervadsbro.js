@@ -110,7 +110,8 @@ jQuery(document).foundation();
       noscroll = true;
       disable_scroll();
       classie.remove( container, 'modify' );
-      classie.add( topnav, 'hide' );
+      if(trigger)
+        classie.add( topnav, 'hide' );
     }
 
     // simulating the end of the transition:
@@ -137,5 +138,8 @@ jQuery(document).foundation();
   }
 
   window.addEventListener( 'scroll', scrollPage );
-  trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  if(trigger)
+    trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+  else
+    classie.remove( topnav, 'hide' );
 })();

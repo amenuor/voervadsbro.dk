@@ -82,3 +82,5 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
     }
     add_action( 'wp_enqueue_scripts', 'voervadsbro_scripts' );
   endif;
+
+  require get_template_directory() . '/inc/VoervadsbroWalkerNav.php';

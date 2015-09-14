@@ -12,7 +12,7 @@ License:     GPLv2 or later
 if ( $_SERVER['SCRIPT_FILENAME'] == __FILE__ )
 	die( 'Access denied.' );
 
-define( 'TGGR_NAME',                 'Tagregator' );
+define( 'TGGR_NAME',                 'TagregatorVVS' );
 define( 'TGGR_REQUIRED_PHP_VERSION', '5.3' ); // because of get_called_class()
 define( 'TGGR_REQUIRED_WP_VERSION',  '3.9' ); // because of 'masonry' v3 script handle
 
