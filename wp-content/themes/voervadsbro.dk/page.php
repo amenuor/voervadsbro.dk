@@ -11,38 +11,55 @@ while (have_posts()):
 	the_post();
 	?>
 
-	<div class="row">
-		<div class="large-12 columns pageheader">
-			<div class="pageheadercontent">
-				<?php the_title(); ?>
-			</div>
+	<div class="row pageheader">
+		<div class="large-12 columns pageheadercontent">
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="large-12 columns wrap">
-			<?php
-			the_content();
+	<div class="moveup">
 
-						wp_link_pages(array(
-							'before' => '<div class="page-links">' . __('Pages:', 'noborders') . ' <ul class="pagination">',
-							'after'  => '</ul></div>',
-							'separator' => ''
-						));
-
-						echo "\n\n";
-
-						// If comments are open or we have at least one comment, load up the comment template
-						if (comments_open() || '0' != get_comments_number()) {
-							comments_template();
-						}
-
-						echo "\n\n";
-
-					endwhile;
-					?>
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="socialsharebar">
 				</div>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="large-12 columns">
+				<div class="pagetitle">
+					<h1><?php the_title(); ?></h1>
+				</div>
+		</div>
+	</div>
+
+
+		<div class="row">
+			<div class="large-12 columns wrap">
+				<?php
+				the_content();
+
+							wp_link_pages(array(
+								'before' => '<div class="page-links">' . __('Pages:', 'noborders') . ' <ul class="pagination">',
+								'after'  => '</ul></div>',
+								'separator' => ''
+							));
+
+							echo "\n\n";
+
+							// If comments are open or we have at least one comment, load up the comment template
+							if (comments_open() || '0' != get_comments_number()) {
+								comments_template();
+							}
+
+							echo "\n\n";
+
+						endwhile;
+						?>
+					</div>
+				</div>
+				
+			</div><!-- end moveup -->
 			    <?php
 
 				if ( function_exists( 'sharing_display' ) ) {

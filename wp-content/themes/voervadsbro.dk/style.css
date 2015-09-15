@@ -150,6 +150,7 @@ section.divider .pricing-table{
 
 .pageheader{
   height: 80vh;
+  max-width: 100vw !important;
   position: relative;
 }
 
@@ -159,9 +160,27 @@ section.divider .pricing-table{
   left: 0;
 }
 
+.pagetitle{
+  background-color: rgba(43,114,71,.5);
+  margin: 0 auto;
+  display: block;
+  padding:20px;
+  border-radius: 2px 2px 2px 2px;
+}
+
+.pagetitle h1{
+  color: #fff;
+}
+
+.moveup{
+  min-height: 30vh;
+  top: -25vh;
+  position: relative;
+}
+
 .wrap{
   background: #fff;
-  margin: 20px auto;
+  margin: 0 auto;
   display: block;
   padding:20px;
   border-radius: 2px 2px 2px 2px;

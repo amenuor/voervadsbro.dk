@@ -1,6 +1,16 @@
 //Init foundation
 jQuery(document).foundation();
 
+var pageheader = jQuery('.pageheader');
+if (pageheader.length ) {
+  pageheader.vegas({
+    slides: [
+      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg1.jpg'},
+      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg2.jpg'},
+      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg3.jpg'}
+    ]
+  });
+}
 //Main BG: http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/
 (function() {
 

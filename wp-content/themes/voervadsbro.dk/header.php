@@ -26,29 +26,15 @@
 			<nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
 				<ul class="title-area">
 					<li class="name">
-						<h1><a href="#">Voervadsbro.dk</a></h1>
+						<h1><a href="/">Voervadsbro.dk</a></h1>
 					</li>
 					<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 					<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
 				</ul>
+				<?php
+						$items_wrap = '<section class="top-bar-section"><ul class="right">%3$s</ul></section>';
+						wp_nav_menu( array( 'theme_location' => 'primary', 'container' => false, 'items_wrap' => $items_wrap, 'walker' => new VoervadsbroWalkerNavMenu ) );
+				?>
 
-				<section class="top-bar-section">
-					<!-- Right Nav Section -->
-					<ul class="right">
-						<li class="active"><a href="#">Right Button Active</a></li>
-						<li class="has-dropdown">
-							<a href="#">Right Button Dropdown</a>
-							<ul class="dropdown">
-								<li><a href="#">First link in dropdown</a></li>
-								<li class="active"><a href="#">Active link in dropdown</a></li>
-							</ul>
-						</li>
-					</ul>
-
-					<!-- Left Nav Section -->
-					<ul class="left">
-						<li><a href="#">Left Nav Button</a></li>
-					</ul>
-				</section>
 			</nav>
 		</div>
