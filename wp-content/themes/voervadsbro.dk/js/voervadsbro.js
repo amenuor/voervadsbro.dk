@@ -7,7 +7,8 @@ if (pageheader.length ) {
     slides: [
       {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg1.jpg'},
       {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg2.jpg'},
-      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg3.jpg'}
+      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg3.jpg'},
+      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg4.jpg'}
     ]
   });
 }
