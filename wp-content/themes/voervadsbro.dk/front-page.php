@@ -50,55 +50,35 @@ get_header(); ?>
 		<h2>Voervadsbro nu</h2>
 		<div class="row">
 			<div class="large-8 columns">
-				<div class="event">
+        <?php
+
+        $args = array(
+        		'post_type' => 'tribe_events',
+        		'posts_per_page' => 3
+        );
+        $latest = new WP_Query( $args );
+        //query_posts($args);
+        while( $latest->have_posts() ) : $latest->the_post();
+
+        ?>
+
+        <div class="event">
 
 						<div class="event-date">
-							<p class="event-month">Sept</p>
-							<p class="event-day">18</p>
+							<p class="event-month"><?php echo tribe_get_start_date(null, true, 'F'); ?></p>
+							<p class="event-day"><?php echo tribe_get_start_date(null, true, 'j'); ?></p>
+              <p class="event-time"><?php echo tribe_get_start_date(null, true, 'H:i'); ?> - <?php echo tribe_get_end_date(null, true, 'H:i'); ?></p>
 						</div>
 
 						<div class="event-desc">
-							<h4 class="event-desc-header">Day in the Life of Foundation for Apps</h4>
-							<p class="event-desc-detail"><span class="event-desc-time"></span>BDConf - Altlanta</p>
-							<a href="http://bdconf.com/speakers/brandon-arnold/" class="rsvp button">RSVP &amp; Details</a>
+							<h4 class="event-desc-header"><?php the_title(); ?></h4>
+							<p class="event-desc-detail"><span class="event-desc-time"></span><?php echo voervadsbro_excerpt(10); ?></p>
+							<a href="<?php echo esc_url( tribe_get_event_link() ); ?>" class="rsvp button">Se mere...</a>
 						</div>
 
-					</div>
-
-					<hr>
-
-					<div class="event">
-
-						<div class="event-date">
-							<p class="event-month">Oct</p>
-							<p class="event-day">21</p>
-						</div>
-
-						<div class="event-desc">
-							<h4 class="event-desc-header">Day in the Life of Foundation for Apps</h4>
-							<p class="event-desc-detail"><span class="event-desc-time"></span>BDConf - Washington, DC</p>
-							<a href="http://bdconf.com/speakers/brandon-arnold/" class="rsvp button">RSVP &amp; Details</a>
-						</div>
-
-					</div>
-
-					<hr>
-
-					<div class="event">
-
-						<div class="event-date">
-							<p class="event-month">Oct</p>
-							<p class="event-day">21</p>
-						</div>
-
-						<div class="event-desc">
-							<h4 class="event-desc-header">Day in the Life of Foundation for Apps</h4>
-							<p class="event-desc-detail"><span class="event-desc-time"></span>BDConf - Washington, DC</p>
-							<a href="http://bdconf.com/speakers/brandon-arnold/" class="rsvp button">RSVP &amp; Details</a>
-						</div>
-
-					</div>
-
+				</div>
+        <hr>
+        <?php endwhile; ?>
 
 			</div>
 			<div class="large-4 columns">

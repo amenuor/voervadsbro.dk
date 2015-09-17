@@ -148,6 +148,10 @@ section.divider .pricing-table{
   background-color: #fff;
 }
 
+.event .event-time{
+  background-color: #87cb80;
+}
+
 .pageheader{
   height: 80vh;
   max-width: 100vw !important;
@@ -187,6 +191,11 @@ section.divider .pricing-table{
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777;
+}
+
+.fb-page{
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #tribe-bar-form {
