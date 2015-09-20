@@ -75,6 +75,7 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
       wp_enqueue_style( 'headerText-font-style', 'https://fonts.googleapis.com/css?family=Righteous', array(), null );
       wp_enqueue_style( 'bodyText-font-style','https://fonts.googleapis.com/css?family=Comfortaa', array(), null );
       wp_enqueue_style( 'vegas-css', get_template_directory_uri() . '/css/vegas.min.css', array(), null );
+      wp_enqueue_style( 'cornermorph-css', get_template_directory_uri() . '/css/menu_cornermorph.css', array(), null );
 
       wp_enqueue_script( 'vegas-script', get_template_directory_uri() . '/js/vegas.min.js', array('jquery'), '2.1.3', true );
       wp_enqueue_script( 'classie-script', get_template_directory_uri() . '/js/classie.js', array(), '1.0.1', true );

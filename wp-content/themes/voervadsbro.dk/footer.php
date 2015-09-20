@@ -32,11 +32,54 @@
 				 M95 100 Q 100 15 105 100 Z">
 		</path>
 	</svg>
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		This is the end
-	</footer><!-- .site-footer -->
 
-	</div><!-- /container -->
+	<!-- Footer -->
+<footer class="footer">
+  <div class="row full-width">
+    <div class="small-12 medium-4 large-4 columns">
+			<i class="fi-trees"></i>
+      <h4>Voervadsbro</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+    </div>
+    <div class="small-6 medium-4 large-4 columns">
+			<i class="fi-compass"></i>
+			<h4>Site Map</h4>
+      <ul class="footer-links">
+        <li><a href="/om-os">Om os</a></li>
+        <li><a href="/events">Aktiviteter</a></li>
+				<li><a href="/blog">Blog</a></li>
+        <li><a href="/billeder">Billeder</a></li>
+      <ul>
+    </div>
+    <div class="small-6 medium-4 large-4 columns">
+			<i class="fi-megaphone"></i>
+      <h4>Kontakter</h4>
+      <ul class="footer-links">
+        <li><a href="https://www.facebook.com/groups/1580899702183353/" target="_blank">Facebook</a></li>
+        <li><a href="#">eMail</a></li>
+      <ul>
+    </div>
+		<div class="power">
+			<p>Powered by </p>
+			<button class="menu-button" id="open-button"></i><span>Open Menu</span></button>
+		</div>
+  </div>
+</footer>
+<div class="menu-wrap">
+	<nav class="menu">
+		<div class="profile"><img src="https://www.yanchware.com/wp-content/themes/yanchware.com/img/yanchware-logo-small.png" alt="YanchWare"/><a href="https://www.yanchware.com" target="_blank"><span>YanchWare</span></a></div>
+		<div class="icon-list">
+			<a href="https://www.linkedin.com/company/yanchware" target="_blank"><i class="fi-social-linkedin"></i></a>
+			<a href="https://www.facebook.com/YanchWare" target="_blank"><i class="fi-social-facebook"></i></a>
+			<a href="https://twitter.com/YanchWare"><i class="fi-social-twitter" target="_blank"></i></a>
+			<a href="https://plus.google.com/+Yanchware"><i class="fi-social-google-plus" target="_blank"></i></a>
+			<a href="https://www.yanchware.com"><i class="fi-web" target="_blank"></i></a>
+		</div>
+	</nav>
+</div>
+
+
+</div><!-- /container -->
 
 <?php wp_footer(); ?>
 

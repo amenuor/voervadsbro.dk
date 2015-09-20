@@ -58,10 +58,6 @@ footer{
   height: 100%;
 }
 
-section.divider .columns{
-  margin-bottom: 30px;
-}
-
 section.divider .title{
   -webkit-transform: none;
   transform: none;
@@ -95,30 +91,111 @@ section.divider .pricing-table{
   z-index: 15;
 }
 
+/* Events */
 
 .event {
-  padding: 1rem 1rem 1rem 0;
-  display: table;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.event-date {
-  width: 6rem;
-  margin: 0 auto 1rem;
-  display: table-cell;
-  width: auto;
+.button{
+  margin: 1rem 1rem 1rem 0 !important;
 }
-.event-date .event-month {
-  margin: 0;
-  background: #388a5a;
-  padding: 0.5rem 2rem;
+
+.event a{
+  color: white;
+}
+
+.event a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+hr.eventdivider{
+  margin: 0 !important;
+  border: 1px dashed #388a5a;
+}
+
+div.event.row{
+  width: 100%;
+}
+
+time.icon
+{
+  font-size: 1em; /* change icon size */
+  display: inline-block;
+  position: relative;
+  width: 7.5em;
+  height: 7.5em;
+  background-color: #fff;
+  margin: 1em auto;
+  border-radius: 0.6em;
+  box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: rotate(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 10%;
+  transform-origin: 50% 10%;
+}
+
+time.icon *
+{
+  display: inline-block;
+  width: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  font-style: normal;
   text-align: center;
 }
-.event-date .event-day {
-  margin: 0;
-  border: 1px solid #388a5a;
-  padding: 0 2rem;
-  text-align: center;
-  font-size: 2rem;
+
+time.icon strong
+{
+  position: absolute;
+  top: 0;
+  padding: 0.4em 0;
+  color: #fff;
+  background-color: #388a5a;
+  box-shadow: 0 2px 0 #256940;
+}
+
+time.icon em
+{
+  position: absolute;
+  bottom: 0.3em;
+  color: #256940;
+}
+
+time.icon span
+{
+  width: 100%;
+  font-size: 2.8em;
+  letter-spacing: -0.05em;
+  padding-top: 1em;
+  color: #2f2f2f;
+}
+
+time.icon:hover, time.icon:focus
+{
+  -webkit-animation: swing 0.6s ease-out;
+  animation: swing 0.6s ease-out;
+}
+
+@-webkit-keyframes swing {
+  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
+  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
+  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
+  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
+  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
+}
+
+@keyframes swing {
+  0%   { transform: rotate(0deg)  skewY(0deg); }
+  20%  { transform: rotate(12deg) skewY(4deg); }
+  60%  { transform: rotate(-9deg) skewY(-3deg); }
+  80%  { transform: rotate(6deg)  skewY(-2deg); }
+  100% { transform: rotate(0deg)  skewY(0deg); }
 }
 
 .event-desc {
@@ -203,21 +280,21 @@ section.divider .pricing-table{
 }
 
 .tribe-bar-views-inner {
-    background: #87cb80;
+  background: #87cb80;
 }
 
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a {
-    color: #444;
-    background: #87cb80
+  color: #444;
+  background: #87cb80
 }
 
 #tribe-bar-views .tribe-bar-views-list .tribe-bar-views-option a:hover {
-    background: #54b54a !important;
-    color: inherit
+  background: #54b54a !important;
+  color: inherit
 }
 
 #tribe-bar-form .tribe-bar-submit input[type=submit] {
-    background: #2b7247;
+  background: #2b7247;
 }
 
 .tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-],.tribe-events-calendar td.tribe-events-past div[id*=tribe-events-daynum-]>a {
@@ -239,4 +316,51 @@ section.divider .pricing-table{
   background-color: #2b7247;
   border-left: 1px solid #388a5a;
   border-right: 1px solid #388a5a;
+}
+
+/* Footer */
+.full-width {
+  max-width: 1400px;
+}
+
+.footer {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #2b7247;
+}
+.footer i {
+  font-size: 50px;
+}
+
+.footer h4 {
+  color: #2b7247;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .8em;
+  color: #2b7247;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .footer .columns:nth-child(n+2) {
+    border-left: 1px solid #2b7247;
+    min-height: 280px;
+  }
+}
+.footer-links {
+  list-style-type: none;
+}
+.footer-links li {
+  margin-top: .5em;
+}
+
+.power p{
+  margin-bottom: 0;
+  font-size: 0.7em;
+  color: orange;
 }
