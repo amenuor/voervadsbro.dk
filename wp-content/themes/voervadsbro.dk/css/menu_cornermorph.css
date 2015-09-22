@@ -105,7 +105,7 @@
 }
 
 .show-menu .menu-wrap {
-	width: 250px;
+	width: 200px;
 	height: 100px;
 	-webkit-animation: anim-jelly 0.8s linear forwards;
 	animation: anim-jelly 0.8s linear forwards;

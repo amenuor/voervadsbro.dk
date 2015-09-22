@@ -318,6 +318,15 @@ time.icon:hover, time.icon:focus
   border-right: 1px solid #388a5a;
 }
 
+@media only screen and (max-width: 40.063em) {
+  .tribe-events-sub-nav li a{
+    background-color: #2b7247;
+  }
+}
+
+#tribe-bar-views .tribe-bar-views-list{
+  z-index: inherit;
+}
 /* Footer */
 .full-width {
   max-width: 1400px;
@@ -363,4 +372,33 @@ time.icon:hover, time.icon:focus
   margin-bottom: 0;
   font-size: 0.7em;
   color: orange;
+}
+
+#comments a{
+  color: #fff;
+}
+
+#comments a:hover{
+  color: #ccc;
+}
+
+.post{
+  background: #fff;
+  margin: 20px;
+  display: block;
+  padding:20px;
+  border-radius: 2px 2px 2px 2px;
+  border: 1px dashed #80cb9f;
+}
+
+.post .metainfo{
+  background-color: #80cb9f;
+}
+
+.post .metainfo i{
+  margin: 5px;
+}
+
+.post .excerpt{
+  margin-top: 10px;
 }

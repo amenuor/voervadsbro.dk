@@ -68,7 +68,7 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
     function voervadsbro_scripts() {
       wp_enqueue_style( 'voervadsbro-style', get_template_directory_uri() . '/style.css?v=' . time(), array(), null );
       wp_enqueue_style( 'mainbg-style', get_template_directory_uri() . '/css/mainbg.css', array(), null );
-      wp_enqueue_style( 'effects-style', get_template_directory_uri() . '/css/effects.css', array(), null );
+      wp_enqueue_style( 'effects-style', get_template_directory_uri() . '/css/effects.css?v=' . time(), array(), null );
       wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation/foundation.css', array(), null );
       wp_enqueue_style( 'foundation-icons-style', get_template_directory_uri() . '/fonts/foundation/foundation-icons.css', array(), null );
       wp_enqueue_style( 'social-font-style', 'https://fonts.googleapis.com/css?family=Gloria+Hallelujah', array(), null );
@@ -98,6 +98,16 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
       $excerpt = preg_replace('`\[[^\]]*\]`','',$excerpt);
       return $excerpt;
     }
+  endif;
+
+  if ( ! function_exists( 'VoervadsbroInfiniteScroll' ) ) :
+    function VoervadsbroInfiniteScroll(){
+      add_theme_support( 'infinite-scroll', array(
+          'container' => 'infinite-container',
+          'footer' => 'footer',
+      ) );
+    }
+    add_action( 'after_setup_theme', 'VoervadsbroInfiniteScroll' );
   endif;
 
   require get_template_directory() . '/inc/VoervadsbroWalkerNav.php';

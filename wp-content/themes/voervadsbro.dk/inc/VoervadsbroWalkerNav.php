@@ -29,8 +29,7 @@ if (!class_exists('VoervadsbroWalkerComment')) {
 	     * start_lvl() only goes as high as 1 deep nested comments */
 	    function __construct() { ?>
 
-	        <h3 id="comments-title">Comments</h3>
-	        <div class="row">
+      <div class="row">
 				<div class="large-8  small-12 columns">
 
 	    <?php }

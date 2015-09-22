@@ -150,6 +150,15 @@ section.divider::after {
 	fill: #256940;
 }
 
+/* Stamp */
+#stamp{
+	background: #2b7247;
+}
+
+#stamp path {
+	fill: #388a5a;
+	stroke: #388a5a; /* avoid gap in FF */
+}
 .ss-style-foldedcorner::before,
 .ss-style-foldedcorner::after {
 	bottom: 0;
