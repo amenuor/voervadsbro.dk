@@ -35,7 +35,7 @@ get_header();
 			<div class="large-12 columns wrap">
          <!-- Ajax container -->
          <?php
-           echo do_shortcode('[ajax_load_more category="blog"]');
+           echo do_shortcode('[ajax_load_more category="blog" button_label="Henter Indlæger"]');
          ?>
 
 		  </div>
