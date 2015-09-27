@@ -63,6 +63,9 @@ section.divider .title{
   transform: none;
   position: static;
   background-color: #2b7247;
+}
+
+section.divider .title a, section.divider .title a:hover{
   color: #fff;
 }
 

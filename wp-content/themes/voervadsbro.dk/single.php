@@ -1,12 +1,15 @@
 <?php
-/*
- * Template Name: Blog
- * Description: A Page Template showing a blog
- */
+/**
+* Template for displaying posts
+*
+* @package Voervadsbro.dk
+*/
 
 get_header();
 
-?>
+while (have_posts()):
+	the_post();
+	?>
 
 	<div class="row pageheader">
 		<div class="large-12 columns pageheadercontent">
@@ -33,12 +36,31 @@ get_header();
 
 		<div class="row">
 			<div class="large-12 columns wrap">
-         <!-- Ajax container -->
-         <?php
-           echo do_shortcode('[ajax_load_more category="blog" button_label="Henter Indlæg"]');
-         ?>
 
-		  </div>
+        <?php if ( has_post_thumbnail() ) : ?>
+          <div class="row"><div class="large-12 columns"><?php the_post_thumbnail('large'); ?></div></div>
+        <?php endif;?>
+
+
+				<?php
+				the_content();
+
+				if ( function_exists( 'comment_form' ) ) {
+					wp_list_comments( array(
+						'walker' => new VoervadsbroWalkerComment,
+						'style' => 'ul',
+						'callback' => null,
+						'end-callback' => null,
+						'type' => 'all',
+						'page' => null,
+						'avatar_size' => 32
+					) );
+					comment_form();
+				}
+
+			endwhile;
+			?>
+		</div>
 	</div>
 
 </div><!-- end moveup -->
@@ -66,5 +88,14 @@ get_header();
 	Q 97.5 40 100 0 Z">
 </path>
 </svg>
+
+<section id="comments" class="divider text-left">
+	<div class="row">
+		<div class="12-large columns">
+
+		</div>
+	</div>
+</section>
+
 
 <?php get_footer(); ?>

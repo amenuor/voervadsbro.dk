@@ -102,31 +102,29 @@ get_header(); ?>
 <section class="divider color">
   <h2>Seneste Nyheder</h2>
   <div class="row">
-    <div class="large-4 medium-4 columns">
-      <ul class="pricing-table active-tb shadow mrgn-20-top">
-        <li class="title">Fantastisk Natur</li>
-        <li class="bullet-item"><img src="http://i.livescience.com/images/i/000/019/660/i02/coral-lake1.jpg?1315001121"></li>
-        <li class="bullet-item">Take root and flourish. Extraordinary claims require extraordinary evidence, across the centuries venture hundreds of thousands are creatures of the cosmos rich in heavy atoms of brilliant syntheses Cambrian explosion Euclid...</li>
-        <li class="cta-button"><a class="button text-transform" href="#">Læs mere</a></li>
-      </ul>
-    </div>
-    <div class="large-4 medium-4 columns">
-      <ul class="pricing-table active-tb shadow mrgn-20-top">
-        <li class="title">test</li>
-        <li class="bullet-item"><img src="http://www.mountainprofessor.com/images/Mountain-Ranges-Colorado-2.jpg"></li>
-        <li class="bullet-item">Take root and flourish. Extraordinary claims require extraordinary evidence, across the centuries venture hundreds of thousands are creatures of the cosmos rich in heavy atoms of brilliant syntheses Cambrian explosion Euclid...</li>
-        <li class="cta-button"><a class="button text-transform" href="#">Læs mere</a></li>
-      </ul>
-    </div>
-    <div class="large-4 medium-4 columns">
-      <ul class="pricing-table active-tb shadow mrgn-20-top">
-        <li class="title">ehi!</li>
-        <li class="bullet-item"><img src="http://www.livetradingnews.com/wp-content/uploads/2014/07/481704-antarctic-sea-ice.jpg"></li>
-        <li class="bullet-item">Take root and flourish. Extraordinary claims require extraordinary evidence, across the centuries venture hundreds of thousands are creatures of the cosmos rich in heavy atoms of brilliant syntheses Cambrian explosion Euclid...</li>
-        <li class="cta-button"><a class="button text-transform" href="#">Læs mere</a></li>
-      </ul>
-    </div>
-  </div>
+
+    <?php
+      $args = array(
+      'posts_per_page' => 3,
+      'cat' => 4
+      );
+
+      $latest = new WP_Query( $args );
+      while( $latest->have_posts() ) : $latest->the_post();
+    ?>
+
+      <div class="large-4 medium-4 columns">
+        <ul class="pricing-table active-tb shadow mrgn-20-top">
+          <li class="title"><?php the_title(); ?></li>
+          <?php if ( has_post_thumbnail() ) : ?>
+            <li class="bullet-item"><?php the_post_thumbnail('small'); ?></li>
+          <?php endif;?>
+          <li class="bullet-item"><?php echo voervadsbro_excerpt(20); ?></li>
+          <li class="cta-button"><a class="button text-transform" href="<?php the_permalink(); ?>">Læs mere</a></li>
+        </ul>
+      </div>
+
+    <?php endwhile; ?>
 
   <div class="row">
     <div class="small-12 columns">

@@ -26,4 +26,9 @@
       </div>
     <?php endif;?>
   </div>
+  <div class="row">
+    <div class="large-12 columns text-right">
+      <a class="button text-transform" href="<?php the_permalink(); ?>">Læs mere</a>
+    </div>
+  </div>
 </div>
