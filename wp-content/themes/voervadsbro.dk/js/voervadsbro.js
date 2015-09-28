@@ -1,17 +1,20 @@
 //Init foundation
 jQuery(document).foundation();
 
-var pageheader = jQuery('.pageheader');
-if (pageheader.length ) {
-  pageheader.vegas({
-    slides: [
-      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg1.jpg'},
-      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg2.jpg'},
-      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg3.jpg'},
-      {src: '/wp-content/themes/voervadsbro.dk/img/backgrounds/bg4.jpg'}
-    ]
+//Init vegas
+jQuery.getJSON('https://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157656886908494&user_id=134802113%40N04&format=json&nojsoncallback=1&api_key=' + window.flickrApi, function(data){
+  var slidesFromFLickr = [];
+  jQuery.each(data.photoset.photo, function(index, item){
+    var photoURL = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_b.jpg'
+    slidesFromFLickr.push({src:photoURL});
   });
-}
+  var pageheader = jQuery('.pageheader');
+  if (pageheader.length ) {
+    pageheader.vegas({
+      slides:slidesFromFLickr
+    });
+  }
+});
 //Main BG: http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/
 (function() {
 
