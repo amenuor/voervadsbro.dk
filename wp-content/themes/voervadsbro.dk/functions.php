@@ -67,7 +67,7 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
   if ( ! function_exists( 'voervadsbro_scripts' ) ) :
     function voervadsbro_scripts() {
       wp_enqueue_style( 'voervadsbro-style', get_template_directory_uri() . '/style.css?v=' . time(), array(), null );
-      wp_enqueue_style( 'mainbg-style', get_template_directory_uri() . '/css/mainbg.css', array(), null );
+      wp_enqueue_style( 'mainbg-style', get_template_directory_uri() . '/css/mainbg.css?v=' . time(), array(), null );
       wp_enqueue_style( 'effects-style', get_template_directory_uri() . '/css/effects.css?v=' . time(), array(), null );
       wp_enqueue_style( 'foundation-style', get_template_directory_uri() . '/css/foundation/foundation.css', array(), null );
       wp_enqueue_style( 'foundation-icons-style', get_template_directory_uri() . '/fonts/foundation/foundation-icons.css', array(), null );

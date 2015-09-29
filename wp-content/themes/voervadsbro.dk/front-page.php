@@ -25,9 +25,9 @@ get_header(); ?>
 
 
 <header class="header">
-  <div class="bg-img"><img src="<?php echo get_template_directory_uri();?>/img/mainbg.jpg" alt="Background Image" /></div>
+  <div class="bg-img"></div>
   <div class="wrapper title">
-    <div class="slide">
+    <div>
       <div class="row">
         <div class="12-small columns">
           <h3>Velkommen til</h3>
