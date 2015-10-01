@@ -76,7 +76,12 @@ if ( ! function_exists( 'voervadsbro_setup' ) ) :
       wp_enqueue_style( 'bodyText-font-style','https://fonts.googleapis.com/css?family=Comfortaa', array(), null );
       wp_enqueue_style( 'vegas-css', get_template_directory_uri() . '/css/vegas.min.css', array(), null );
       wp_enqueue_style( 'cornermorph-css', get_template_directory_uri() . '/css/menu_cornermorph.css', array(), null );
+      wp_enqueue_style( 'photoswipe-css', get_template_directory_uri() . '/js/photoswipe/photoswipe.css', array(), null );
+      wp_enqueue_style( 'photoswipe-ui-css', get_template_directory_uri() . '/js/photoswipe/default-skin/default-skin.css', array(), null );
 
+      wp_enqueue_script( 'photoswipe-script', get_template_directory_uri() . '/js/photoswipe/photoswipe.min.js', array( ), '4.1.0', false );
+      wp_enqueue_script( 'photoswipe-ui-script', get_template_directory_uri() . '/js/photoswipe/photoswipe-ui-default.min.js', array( ), '4.1.0', false );
+      wp_enqueue_script( 'masonry-script', get_template_directory_uri() . '/js/masonry.3.3.2.min.js', array('jquery'), '3.3.2', false );
       wp_enqueue_script( 'vegas-script', get_template_directory_uri() . '/js/vegas.min.js', array('jquery'), '2.1.3', true );
       wp_enqueue_script( 'classie-script', get_template_directory_uri() . '/js/classie.js', array(), '1.0.1', true );
       wp_enqueue_script( 'modernizr-script', get_template_directory_uri() . '/js/vendor/modernizr.js', array(), '2.8.3', false );
