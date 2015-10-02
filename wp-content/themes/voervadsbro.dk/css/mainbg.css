@@ -321,7 +321,7 @@ div.trigger span {
 
 }
 
-@media screen and (max-width: 27em) {
+@media screen and (max-width: 64em) {
 	.title, .content {
 		font-size: 50%;
 	}

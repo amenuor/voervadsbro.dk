@@ -348,6 +348,38 @@ time.icon:hover, time.icon:focus
     color: #000;
 }
 
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+@media only screen and (max-width: 40em){
+  .event .eventdate, .event .eventlink, .event-desc
+  {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  #clouds, #stamp, #bigHalfCircle{
+    width: 80em;
+  }
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .event .eventdate, .event .eventlink, .event-desc
+  {
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  #clouds, #stamp, #bigHalfCircle{
+    width: 128em;
+  }
+
+}
+.power{
+  width: 100%;
+  text-align: center;
+  background-color: #fff;
+}
+
 .footer {
   background-color: #fff;
   padding: 2rem 4rem;
@@ -434,6 +466,10 @@ time.icon:hover, time.icon:focus
   border-right: 5px #eee solid;
   border-bottom: 20px #eee solid;
   margin: 10px;
+}
+
+#masonrygrid{
+  min-width: 1000px;
 }
 
 /* Rotate all even images 2 degrees */

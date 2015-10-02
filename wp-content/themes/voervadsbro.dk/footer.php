@@ -59,12 +59,12 @@
         <li><a href="#">eMail</a></li>
       <ul>
     </div>
-		<div class="power">
-			<p>Powered by </p>
-			<button class="menu-button" id="open-button"></i><span>Open Menu</span></button>
-		</div>
   </div>
 </footer>
+<div class="power">
+	<p>Powered by </p>
+	<button class="menu-button" id="open-button"></i><span>Open Menu</span></button>
+</div>
 <div class="menu-wrap">
 	<nav class="menu">
 		<div class="profile"><img src="https://www.yanchware.com/wp-content/themes/yanchware.com/img/yanchware-logo-small.png" alt="YanchWare"/><a href="https://www.yanchware.com" target="_blank"><span>YanchWare</span></a></div>

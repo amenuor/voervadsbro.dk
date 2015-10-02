@@ -63,19 +63,19 @@ get_header(); ?>
       ?>
 
       <div class="event row">
-        <div class="large-4 columns">
+        <div class="large-3 columns eventdate">
           <time datetime="2014-09-20" class="icon">
             <em><?php echo tribe_get_start_date(null, true, 'H:i'); ?> - <?php echo tribe_get_end_date(null, true, 'H:i'); ?></em>
             <strong><?php echo tribe_get_start_date(null, true, 'F'); ?></strong>
             <span><?php echo tribe_get_start_date(null, true, 'j'); ?></span>
           </time>
         </div>
-        <div class="large-8 columns">
-
-          <div class="event-desc">
-            <h4 class="event-desc-header"><a href="<?php echo esc_url( tribe_get_event_link() ); ?>"><?php the_title(); ?></a></h4>
-            <p class="event-desc-detail"><span class="event-desc-time"></span><?php echo voervadsbro_excerpt(10); ?></p>
-          </div>
+        <div class="large-6 columns event-desc">
+          <h4 class="event-desc-header"><a href="<?php echo esc_url( tribe_get_event_link() ); ?>"><?php the_title(); ?></a></h4>
+          <p class="event-desc-detail"><span class="event-desc-time"></span><?php echo voervadsbro_excerpt(10); ?></p>
+        </div>
+        <div class="large-3 medium-3 small-1 column eventlink">
+          <a class="button text-transform" href="<?php echo esc_url( tribe_get_event_link() ); ?>">Læs Mere...</a>
         </div>
     </div>
     <hr class="eventdivider">
