@@ -152,7 +152,8 @@ jQuery.getJSON('https://api.flickr.com/services/rest/?method=flickr.photosets.ge
   if(!mobileAndTabletcheck())
     disable_scroll();
   else
-    classie.add( trigger, 'hide' );
+    if(trigger)
+      classie.add( trigger, 'hide' );
 
   if( pageScroll ) {
     isRevealed = true;
@@ -161,6 +162,9 @@ jQuery.getJSON('https://api.flickr.com/services/rest/?method=flickr.photosets.ge
   }
   if(!mobileAndTabletcheck())
     window.addEventListener( 'scroll', scrollPage );
+  else
+    classie.remove( topnav, 'hide' );
+
   if(trigger)
     trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
   else
