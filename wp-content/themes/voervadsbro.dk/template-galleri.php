@@ -224,8 +224,11 @@ function areWeDoneYet(){
 		}
 
 		jQuery('.galleryImage').click(onThumbnailsClick);
-		jQuery("#masonrygrid").masonry({
-			itemSelector: '.galleryImage'
+		jQuery("#masonrygrid").imagesLoaded(function(){
+			jQuery("#masonrygrid").masonry({
+				itemSelector: '.galleryImage',
+			 	columnWidth: 3
+			});
 		});
 	}
 }
@@ -251,7 +254,7 @@ jQuery.getJSON('https://api.flickr.com/services/rest/?method=flickr.photosets.ge
 					return obj.label == "Small";
 				})[0];
 
-				jQuery('#masonrygrid').append('<div class="galleryImage"><img title="'+item.title+'" data-index="'+items.length+'" src="'+mediumSize.source+'"></div>');
+				jQuery('#masonrygrid').append('<div class="galleryImage"><img title="'+item.title+'" data-index="'+items.length+'" src="'+mediumSize.source+'" width="'+mediumSize.width+'" height="'+mediumSize.height+'"></div>');
 
 			}else{
 				items.push({});
