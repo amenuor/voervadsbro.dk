@@ -25,6 +25,10 @@ body{
   color: #000;
 }
 
+.title-area .fi-trees{
+  color: #2b7247;
+}
+
 #socialCollage{
   font-family: 'Gloria Hallelujah', cursive !important;
   color: #000;
