@@ -39,7 +39,7 @@
     <div class="small-12 medium-4 large-4 columns">
 			<i class="fi-trees"></i>
       <h4>Voervadsbro</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum maiores alias ea sunt facilis impedit fuga dignissimos illo quaerat iure in nobis id quos, eaque nostrum! Unde, voluptates suscipit repudiandae!</p>
+      <p>Landsbyforeningen for Voervadsbro og Omegn er en lille forening for nuværende og tidligere indbyggere i Voervadsbro.</p>
     </div>
     <div class="small-6 medium-4 large-4 columns">
 			<i class="fi-compass"></i>
@@ -55,7 +55,8 @@
 			<i class="fi-megaphone"></i>
       <h4>Kontakter</h4>
       <ul class="footer-links">
-        <li><a href="https://www.facebook.com/groups/1580899702183353/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.facebook.com/voervadsbro" target="_blank">Facebook</a></li>
+				<li><a href="https://www.flickr.com/photos/134802113@N04/" target="_blank">Flickr</a></li>
         <li><a href="#">eMail</a></li>
       <ul>
     </div>
@@ -71,9 +72,9 @@
 		<div class="icon-list">
 			<a href="https://www.linkedin.com/company/yanchware" target="_blank"><i class="fi-social-linkedin"></i></a>
 			<a href="https://www.facebook.com/YanchWare" target="_blank"><i class="fi-social-facebook"></i></a>
-			<a href="https://twitter.com/YanchWare"><i class="fi-social-twitter" target="_blank"></i></a>
-			<a href="https://plus.google.com/+Yanchware"><i class="fi-social-google-plus" target="_blank"></i></a>
-			<a href="https://www.yanchware.com"><i class="fi-web" target="_blank"></i></a>
+			<a href="https://twitter.com/YanchWare" target="_blank"><i class="fi-social-twitter"></i></a>
+			<a href="https://plus.google.com/+Yanchware" target="_blank"><i class="fi-social-google-plus"></i></a>
+			<a href="https://www.yanchware.com" target="_blank"><i class="fi-web"></i></a>
 		</div>
 	</nav>
 </div>

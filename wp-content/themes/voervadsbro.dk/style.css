@@ -29,6 +29,12 @@ body{
   color: #2b7247;
 }
 
+#loginMenuItem i{
+  color: #F9F414;
+  padding-right: 5px;
+  font-size: 1.5em;
+}
+
 #socialCollage{
   font-family: 'Gloria Hallelujah', cursive !important;
   color: #000;
@@ -378,6 +384,7 @@ time.icon:hover, time.icon:focus
   }
 
 }
+
 .power{
   width: 100%;
   text-align: center;
