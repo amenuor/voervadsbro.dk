@@ -227,7 +227,7 @@ function areWeDoneYet(){
 		jQuery("#masonrygrid").imagesLoaded(function(){
 			jQuery("#masonrygrid").masonry({
 				itemSelector: '.galleryImage',
-			 	columnWidth: 3
+				isFitWidth: true
 			});
 		});
 	}
