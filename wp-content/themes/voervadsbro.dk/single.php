@@ -38,7 +38,7 @@ while (have_posts()):
 			<div class="large-12 columns wrap">
 
         <?php if ( has_post_thumbnail() ) : ?>
-          <div class="row"><div class="large-12 columns"><?php the_post_thumbnail('large'); ?></div></div>
+          <div class="row"><div class="large-12 columns text-center"><?php the_post_thumbnail('large'); ?></div></div>
         <?php endif;?>
 
 

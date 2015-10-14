@@ -57,7 +57,7 @@
       <ul class="footer-links">
         <li><a href="https://www.facebook.com/voervadsbro" target="_blank">Facebook</a></li>
 				<li><a href="https://www.flickr.com/photos/134802113@N04/" target="_blank">Flickr</a></li>
-        <li><a href="#">eMail</a></li>
+        <li><a href="mailto:landsbyforeningen@voervadsbro.dk">eMail</a></li>
       <ul>
     </div>
   </div>
